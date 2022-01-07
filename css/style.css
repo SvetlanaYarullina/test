@@ -306,6 +306,19 @@ img {
   border-top: 1px solid #886e5b;
   border-bottom: 1px solid #71543f;
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .site-list a {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .site-list a {
+    padding-top: 25px;
+    padding-bottom: 23px;
+    background: none;
+    border: none;
+  }
+}
 .stats {
   background-color: #242424;
   color: #ffffff;
@@ -511,6 +524,7 @@ img {
 }
 @media (min-width: 1200px) {
   .user-list {
+    width: auto;
     max-width: 160px;
   }
 }
@@ -551,9 +565,9 @@ img {
     position: relative;
     width: auto;
     height: auto;
-    padding-top: 25px;
+    padding-top: 70px;
     padding-right: 30px;
-    padding-left: 50px;
+    padding-left: 80px;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
@@ -577,6 +591,11 @@ img {
   .user-list__login:active .user-list__login-icon {
     opacity: 0.1;
   }
+  .user-list__login span {
+    opacity: 1;
+    top: 25px;
+    left: 45px;
+  }
 }
 .user-list__login-icon {
   position: absolute;
@@ -586,6 +605,17 @@ img {
   height: 16px;
   opacity: 0.3;
   fill: #ffffff;
+}
+@media (min-width: 768px) {
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .user-list__login-icon {
+    left: 15px;
+  }
 }
 .page {
   height: 100%;

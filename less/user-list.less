@@ -3,6 +3,7 @@
         width: 60px;
     }
     @media @desktop-widths{
+        width: auto;
         max-width:160px;
     }
 }
@@ -42,14 +43,14 @@
             }
         }
     }
+
     @media @desktop-widths{
         position: relative;
         width: auto;
         height: auto;
-        padding-top: 25px;
+        padding-top: 70px;
         padding-right: 30px;
-        padding-left: 50px;
-
+        padding-left: 80px;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -74,6 +75,12 @@
         &:active .user-list__login-icon{
             opacity: 0.1;
         }
+
+        span{
+            opacity: 1;
+            top: 25px;
+            left: 45px;
+        }
     }
 }
 
@@ -85,4 +92,13 @@
     height: 16px;
     opacity: 0.3;
     fill: #ffffff;
+
+    @media @tablet-widths{
+        top: 29px;
+        left: 12px;
+    }
+
+    @media @desktop-widths{
+        left: 15px;
+    }
 }
