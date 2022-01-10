@@ -1,0 +1,132 @@
+.advantages{
+    background-color: #353535;
+}
+
+.advantages::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 100%;
+    background: url(../img/corner-dark.svg) no-repeat;
+
+    @media @desktop-widths{
+        height: 65px;
+    }
+}
+
+.advantages__wrapper{
+    @media @mobile-widths-only{
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: -3px;
+}
+
+    @media @tablet-widths{
+        padding:0 100px;
+    }
+
+    @media @desktop-widths{
+        max-width: 960px;
+        margin: 0 auto;
+        padding-top: 77px;   
+    }
+}
+
+.advantages__list{
+    margin: 0;
+    padding: 0;
+
+    @media @desktop-widths{
+        display: flex;
+    }
+}
+
+.advantages__item{
+    list-style: none;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid fade(#FFFFFF, 10%);
+
+    @media @mobile-widths-only{   
+        background-position: 50% 15%;
+        padding-top: 130px;
+    }
+
+    @media @tablet-widths{
+        box-sizing: border-box;
+        background-position: left 0%;
+        padding-top: 0;
+        padding-left: 130px;
+    }
+
+    @media @desktop-widths{
+        border: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        background-position: 50% 0%;
+        padding: 0 40px;
+        padding-top: 80px;
+
+        &:last-child{
+            border:none;
+        }
+    }
+}
+
+.advantages__item--fast{
+    background-image: url("../img/advantage-1-icon.svg");
+}
+
+.advantages__item--cool{
+    background-image: url("../img/advantage-2-icon.svg");
+}
+
+.advantages__item--price{
+    background-image: url("../img/advantage-3-icon.svg");
+}
+
+.advantages__title{
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    @media @mobile-widths-only{
+        text-align: center;   
+    }
+
+    @media @tablet-widths{
+        margin-bottom: 12px;
+        margin-top: 42px;
+    }
+
+    @media @desktop-widths{
+        text-align: center;   
+    }
+}
+
+.advantages__description{
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    @media @mobile-widths-only{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    @media @tablet-widths{
+        padding-bottom: 37px;
+    }
+
+    @media @desktop-widths{
+        text-align: center;   
+    }
+}
+
+.advantages__toggles{
+    display: none;
+}
