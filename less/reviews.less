@@ -1,0 +1,155 @@
+.reviews__wrapper{
+    padding: 0 20px;
+
+    @media @tablet-widths{
+        padding: 0 64px;
+    }
+
+    @media @desktop-widths{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+.section-head-wrapper{
+
+    @media @tablet-widths{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    @media @desktop-widths{
+        max-width: 700px;
+    }
+}
+
+.swiper{
+        max-width: 960px;
+        height: 200px;
+    
+    @media @desktop-widths{
+        height: 190px;
+    }
+
+    @media @desktop-widths{
+        width: 960px;
+        height: 260px;
+    }
+}
+
+.title{
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    @media @tablet-widths{
+        font-size: 40px;
+        line-height: 30px;
+    }
+}
+
+.button{  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #E5DDD5;
+    text-decoration: none;   
+    margin: auto 0;
+
+    @media @mobile-widths-only{
+        display: none;
+
+    }
+
+    @media @tablet-widths{
+        padding: 13px 24px;
+    }
+
+    @media @desktop-widths{
+        padding: 15px 24px;
+    }
+}
+
+.reviews__item{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    @media @tablet-widths{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+
+    @media @desktop-widths{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 50px;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.reviews__author-image{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.reviews__author-info{
+    padding: 0 10px;
+
+    @media @desktop-widths{
+        padding: 20px 40px;
+    }
+
+    @media @desktop-widths{
+        padding: 20px 60px;
+    }
+}
+
+.reviews__author-name{
+        font-family: PT Sans Narrow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 27px;
+        text-align: left;
+        color: #000000;
+}
+
+.reviews__text{
+        font-family: PT Sans Narrow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+        color: #000000;
+
+    @media @tablet-widths{
+        margin-top: 12px;   
+    }
+}
+
+.swiper-button-next, .swiper-button-prev{
+
+    @media @mobile-widths-only{
+        &:after{
+            visibility: hidden;
+        }
+    }
+
+    // @media @desktop-widths{
+    // }
+}
+
+
+
