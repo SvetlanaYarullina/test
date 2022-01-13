@@ -1,5 +1,10 @@
+.reviews{
+    margin-top: 27px;
+}
+
 .reviews__wrapper{
     padding: 0 20px;
+    position: relative;
 
     @media @tablet-widths{
         padding: 0 64px;
@@ -54,6 +59,12 @@
     }
 }
 
+.reviews__title{
+    @media @tablet-widths{
+        text-align: left;
+    }
+}
+
 .button{  
     font-style: normal;
     font-weight: bold;
@@ -64,11 +75,7 @@
     border: 1px solid #E5DDD5;
     text-decoration: none;   
     margin: auto 0;
-
-    @media @mobile-widths-only{
-        display: none;
-
-    }
+    padding: 13px 90px;
 
     @media @tablet-widths{
         padding: 13px 24px;
@@ -76,6 +83,23 @@
 
     @media @desktop-widths{
         padding: 15px 24px;
+    }
+}
+
+.reviews__write {
+    @media @mobile-widths-only{
+        display: none;
+    }
+
+    @media @tablet-widths{
+        position: absolute;
+        top: -42px;
+        right: 64px;
+        display: block;
+        max-width: 280px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
@@ -146,9 +170,6 @@
             visibility: hidden;
         }
     }
-
-    // @media @desktop-widths{
-    // }
 }
 
 

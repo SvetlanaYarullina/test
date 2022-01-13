@@ -1,0 +1,120 @@
+.news{
+    margin-top: 74px;
+
+    @media @tablet-widths{
+        margin-top: 91px;
+    }
+
+    @media @desktop-widths{
+        margin-top: 104px;
+    }
+}
+
+.news__wrapper{
+    position: relative;
+    padding: 0 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #E5DDD5;
+
+    @media @tablet-widths{
+        padding: 0 64px;
+        padding-bottom: 35px;
+    }
+
+    @media @desktop-widths{
+        max-width: 960px;
+        margin: 0 auto;
+        padding-bottom: 39px;
+    }
+}
+
+.news__title{
+    @media @tablet-widths{
+        text-align: left;
+    }
+}
+
+.news__item{
+    display: flex;
+    max-width: 280px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    margin-top: 18px;
+    text-decoration: none;
+
+    @media @mobile-widths-only{
+        &:first-child{
+            border-bottom: 1px solid #E5DDD5;
+        }
+    }
+
+    @media (max-width: 1023px){
+        &:nth-child(n+3){
+            display: none;
+        }
+    }
+}
+
+.news__list{
+    @media @tablet-widths{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.news__date{
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    line-height: 15px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: center;
+
+    &::before{   
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-left: 24px solid transparent;
+        border-right: 24px solid transparent;
+        border-top: 10px solid #000000;
+    }
+}
+
+.news__day{
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.news__text{
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0;
+}
+
+.news__to-all{
+    display: block;
+    max-width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    @media @tablet-widths{
+        position: absolute;
+        top: -42px;
+        right: 64px;
+    }
+}
