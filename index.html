@@ -119,7 +119,7 @@
               500 000
             </dt>
             <dd class="stats__description">
-              лайков <br>
+              лайков и<br>
               комплиментов
             </dd>
           </div>
@@ -305,6 +305,32 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
+      </p>
+      <p class="login-password-info">
+        <label class="login-checkbox" for="user-password">
+          <input class="visually-hidden" type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль</a>
+      </p>
+      <buttom class="button" type="submit">Войти</buttom>
+    </form>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/mobile-menu.js"></script>
